@@ -1,0 +1,28 @@
+#Documentation config
+springDoc:
+  #Json documentation
+  apiDocs:
+    enabled: true
+    path: /api/v3/api-docs
+  #Swagger documentation
+  swaggerUi:
+    enabled: true
+    path: /doc/swagger-ui.html
+spring:
+  application:
+    name: OpenAIAssistantAPI
+    description: Api que implementa el uso de la api de Open Ai
+    version: 1.0.0
+  #Open ai config
+  ai:
+    openai:
+      apiKey: ${SPRING_AI_OPENAI_APIKEY}
+      chat:
+        options:
+          model: gpt-3.5-turbo
+          temperature: 0.7
+server:
+  servlet:
+    encoding:
+      forceResponse: true
+      charset: UTF-8
