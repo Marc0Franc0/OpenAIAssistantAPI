@@ -24,6 +24,7 @@ public class TextServiceImpl implements TextService {
         catch(Exception e){
             response = "No se obtuvo una respuesta";
             log.debug("Exception:{}".concat(e.getMessage()));
+            throw new RuntimeException(response);
         }
         return TextResponse
                 .builder()

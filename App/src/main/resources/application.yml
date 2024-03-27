@@ -11,12 +11,12 @@ springDoc:
 spring:
   application:
     name: OpenAIAssistantAPI
-    description: Api que implementa el uso de la api de Open Ai
+    description: API REST diseñada para implementar y facilitar el uso de la API de OpenAI en un sistema de chat basado en texto. Permite interactuar con el sistema de chat mediante dos endpoints principales.
     version: 1.0.0
   #Open ai config
   ai:
     openai:
-      apiKey: ${SPRING_AI_OPENAI_APIKEY}
+      apiKey: ${SPRING_AI_OPENAI_APIKEY} #Tu clave API de Open Ai
       chat:
         options:
           model: gpt-3.5-turbo
