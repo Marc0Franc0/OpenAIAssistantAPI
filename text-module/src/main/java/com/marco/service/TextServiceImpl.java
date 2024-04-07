@@ -19,7 +19,10 @@ public class TextServiceImpl implements TextService {
     public TextResponse call(String message) {
         String response;
         try{
-            response = chatClient.call(message);
+            response = chatClient.call(message)
+                    .replaceAll("\\n"," ")
+                    .replaceAll("\\t"," ")
+                    .replaceAll("\\s"," ");
         }
         catch(Exception e){
             response = "No se obtuvo una respuesta";

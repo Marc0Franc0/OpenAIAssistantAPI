@@ -32,7 +32,7 @@ public class TextModuleController {
     }
     @Operation(summary = "Generates a stream of text using the OpenAI API", responses = {
             @ApiResponse(description = "Successful Operation", responseCode = "200",
-                    content = @Content( schema = @Schema(implementation = String.class))),
+                    content = @Content( schema = @Schema(implementation = Flux.class))),
             @ApiResponse(responseCode = "404", description = "Not found",
                     content = @Content)})
     @GetMapping("/ai/generateTextStream")
