@@ -36,6 +36,26 @@ curl http://localhost:8080/api/v1/ai/generateTextStream?message=Hola
 ```
 "Texto generado por api"
 ```
+
+### GET /generateImage
+
+Este endpoint permite solcitar un tipo de imágen para que la API de OpenAi devuelva cinco imágenes de acuerdo a lo solicitado.
+```shell
+curl http://localhost:8080/api/v1/ai/generateImage?message=ejemplo
+```
+- Response
+```
+{
+  "request": "Ejemplo",
+  "imagesUrl": [
+    "url1",
+    "url2",
+    "url3",
+    "url4",
+    "url5"
+    ]
+}
+```
 ## Instalación y configuración
 Sigue estos pasos para instalar y configurar la API:
 1. Clonar repositorio

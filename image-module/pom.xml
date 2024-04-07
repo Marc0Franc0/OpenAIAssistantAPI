@@ -7,24 +7,12 @@
         <groupId>com.marco</groupId>
         <artifactId>OpenAIAssistantAPI</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>App</artifactId>
+    <artifactId>image-module</artifactId>
     <packaging>jar</packaging>
-    <dependencies>
-        <dependency>
-            <groupId>com.marco</groupId>
-            <artifactId>text-module</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.marco</groupId>
-            <artifactId>image-module</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
     <properties>
+        <spring.main.sources>false</spring.main.sources>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,6 +25,7 @@
                 <configuration>
                     <mainClass>com.marco.App</mainClass>
                 </configuration>
+
             </plugin>
         </plugins>
     </build>
