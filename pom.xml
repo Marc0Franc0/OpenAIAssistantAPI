@@ -17,7 +17,8 @@
 		<module>text-module</module>
 		<module>App</module>
 		<module>image-module</module>
-	</modules>
+        <module>audio-module</module>
+    </modules>
 
 		<dependencies>
 			<dependency>

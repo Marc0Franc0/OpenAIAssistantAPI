@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>text-module</artifactId>
+    <artifactId>audio-module</artifactId>
     <packaging>jar</packaging>
     <properties>
         <spring.main.sources>false</spring.main.sources>
@@ -17,13 +17,6 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>com.marco</groupId>
-            <artifactId>audio-module</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -36,5 +29,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

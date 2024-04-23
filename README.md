@@ -39,7 +39,7 @@ curl http://localhost:8080/api/v1/ai/generateTextStream?message=Hola
 
 ### GET /generateImage
 
-Este endpoint permite solcitar un tipo de imágen para que la API de OpenAi devuelva cinco imágenes de acuerdo a lo solicitado.
+Este endpoint permite solicitar un tipo de imágen para que la API de OpenAi devuelva cinco imágenes de acuerdo a lo solicitado.
 ```shell
 curl http://localhost:8080/api/v1/ai/generateImage?message=ejemplo
 ```
@@ -56,6 +56,28 @@ curl http://localhost:8080/api/v1/ai/generateImage?message=ejemplo
     ]
 }
 ```
+### POST /generateText/audio
+
+Este endpoint permite enviar un audio al sistema de chat para su procesamiento utilizando la API de OpenAI y obtener una respuesta coherente en formato de cadena de texto.
+```shell
+curl http://localhost:8080/api/v1/ai/generateText/audio
+```
+- Response
+```
+{"generation":"Texto generado por api"}
+```
+
+### POST /generateTextStream/audio
+
+Este endpoint permite enviar un audio al sistema de chat para su procesamiento utilizando la API de OpenAI y obtener una respuesta coherente en formato de flujo de datos.
+```shell
+curl http://localhost:8080/api/v1/ai/generateTextStream/audio 
+```
+- Response
+```
+"Texto generado por api"
+```
+
 ## Instalación y configuración
 Sigue estos pasos para instalar y configurar la API:
 1. Clonar repositorio
